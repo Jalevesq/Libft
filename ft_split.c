@@ -6,11 +6,48 @@
 /*   By: jalevesq <jalevesq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 09:58:57 by jalevesq          #+#    #+#             */
-/*   Updated: 2022/11/07 10:41:16 by jalevesq         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:09:56 by jalevesq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	*ft_free(char **split, size_t j)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < j)
+		free(split[i++]);
+	free(split);
+	return (NULL);
+}
+
+static char	**ft_fill_substr(char const *s, char c, char **str)
+{
+	size_t	i;
+	size_t	j;
+	int		index;
+
+	i = 0;
+	j = 0;
+	index = -1;
+	while (i <= ft_strlen(s))
+	{
+		if (s[i] != c && index < 0)
+			index = i;
+		else if ((s[i] == c || i == ft_strlen(s)) && index >= 0)
+		{
+			str[j] = ft_substr(s, index, i - index);
+			if (!str[j++])
+				return (ft_free(str, j));
+			index = -1;
+		}
+		i++;
+	}
+	str[j] = NULL;
+	return (str);
+}
 
 static size_t	count_words(char const *s, char c)
 {
@@ -35,50 +72,25 @@ static size_t	count_words(char const *s, char c)
 	return (count);
 }
 
-char	*ft_2substr(char const *s, unsigned int start, size_t len)
-{
-	size_t	s_len;
-	size_t	size;
-	char	*sub;
-
-	if (!s)
-		return (NULL);
-	s_len = ft_strlen(s);
-	if (start > s_len)
-		return (ft_strdup(""));
-	if (start + len > s_len)
-		len = s_len - start;
-	size = len + 1;
-	sub = (char *) malloc(size * sizeof(char));
-	ft_memcpy(sub, s + start, len);
-	sub[len] = '\0';
-	return (sub);
-}
-
 char	**ft_split(char const *s, char c)
 {
 	char	**str;
-	size_t	i;
-	size_t	j;
-	int		index;
 
 	str = (char **)malloc((count_words(s, c) + 1) * sizeof(char *));
 	if (!str)
 		return (NULL);
-	i = 0;
-	j = 0;
-	index = -1;
-	while (i <= ft_strlen(s))
-	{
-		if (s[i] != c && index < 0)
-			index = i;
-		else if ((s[i] == c || i == ft_strlen(s)) && index >= 0)
-		{
-			str[j++] = ft_2substr(s, index, i - index);
-			index = -1;
-		}
-		i++;
-	}
-	str[j] = NULL;
-	return (str);
+	return (ft_fill_substr(s, c, str));
 }
+
+// int main(void)
+// {
+//     char    s[] = "hello!";
+//     char    c = ' ';
+//     char    **str = ft_split(s, c);
+//     while (*str)
+//     {
+//         ft_putendl_fd(*str, 1);
+//         str++;
+//     }
+//     return (0);
+// }

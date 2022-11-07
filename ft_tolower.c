@@ -6,7 +6,7 @@
 /*   By: jalevesq <jalevesq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 16:39:13 by jalevesq          #+#    #+#             */
-/*   Updated: 2022/10/19 13:16:15 by jalevesq         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:22:17 by jalevesq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,10 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+// 	int i = 'A';
+// 	printf("%d", ft_tolower(i));
+// }

@@ -6,7 +6,7 @@
 /*   By: jalevesq <jalevesq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 09:34:24 by jalevesq          #+#    #+#             */
-/*   Updated: 2022/11/01 16:26:35 by jalevesq         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:11:17 by jalevesq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,10 @@ char	*ft_strdup(const char *s1)
 	*offset = '\0';
 	return (ptr);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+// 	char i[50] = "Test";
+// 	printf("%s", ft_strdup(i));
+// }

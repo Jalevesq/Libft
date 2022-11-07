@@ -6,7 +6,7 @@
 /*   By: jalevesq <jalevesq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 12:59:21 by jalevesq          #+#    #+#             */
-/*   Updated: 2022/10/19 13:37:54 by jalevesq         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:07:17 by jalevesq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,10 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+// 	int i = 'A';
+// 	printf("%d", ft_isdigit(i));
+// }

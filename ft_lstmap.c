@@ -6,18 +6,11 @@
 /*   By: jalevesq <jalevesq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 05:26:58 by jalevesq          #+#    #+#             */
-/*   Updated: 2022/11/04 07:24:02 by jalevesq         ###   ########.fr       */
+/*   Updated: 2022/11/07 15:13:06 by jalevesq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
-// {
-// 	t_list map;
-
-// 	map = 
-// }
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

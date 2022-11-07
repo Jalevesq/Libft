@@ -6,7 +6,7 @@
 /*   By: jalevesq <jalevesq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 13:13:35 by jalevesq          #+#    #+#             */
-/*   Updated: 2022/11/03 14:16:23 by jalevesq         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:22:30 by jalevesq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,10 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+// 	int i = 'A';
+// 	printf("%d", ft_toupper(i));
+// }

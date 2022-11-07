@@ -6,7 +6,7 @@
 /*   By: jalevesq <jalevesq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 08:22:59 by jalevesq          #+#    #+#             */
-/*   Updated: 2022/11/01 16:27:03 by jalevesq         ###   ########.fr       */
+/*   Updated: 2022/11/07 17:01:15 by jalevesq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,11 +46,4 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 // 	printf("%lu\n", strlcpy(dst1, src1, strlen(dst1)+1));
 // 	printf("%s\n", src1);
 // 	printf("%s\n\n", dst1);
-//  printf("Avant ma fonction\n");
-// 	printf("%s\n", src2);
-// 	printf("%s\n\n", dst2);
-// 	printf("Après ma fonction\n");
-// 	printf("%lu\n", ft_strlcpy(dst1, src1, strlen(dst1)+1));
-// 	printf("%s\n", src2);
-// 	printf("%s\n", dst2);
 // }

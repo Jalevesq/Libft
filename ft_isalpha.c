@@ -6,7 +6,7 @@
 /*   By: jalevesq <jalevesq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 12:55:12 by jalevesq          #+#    #+#             */
-/*   Updated: 2022/11/01 16:29:05 by jalevesq         ###   ########.fr       */
+/*   Updated: 2022/11/07 14:20:14 by jalevesq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,10 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+// 	int i = 'A';
+// 	printf("%d", ft_isalpha(i));
+// }

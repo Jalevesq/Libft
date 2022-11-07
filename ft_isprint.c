@@ -6,7 +6,7 @@
 /*   By: jalevesq <jalevesq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 13:05:25 by jalevesq          #+#    #+#             */
-/*   Updated: 2022/10/19 13:17:15 by jalevesq         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:07:34 by jalevesq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,10 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+// 	int i = 'A';
+// 	printf("%d", ft_isprint(i));
+// }
