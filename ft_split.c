@@ -6,7 +6,7 @@
 /*   By: jalevesq <jalevesq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 09:58:57 by jalevesq          #+#    #+#             */
-/*   Updated: 2022/11/04 07:29:52 by jalevesq         ###   ########.fr       */
+/*   Updated: 2022/11/07 10:41:16 by jalevesq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,6 @@ char	**ft_split(char const *s, char c)
 	str = (char **)malloc((count_words(s, c) + 1) * sizeof(char *));
 	if (!str)
 		return (NULL);
-
 	i = 0;
 	j = 0;
 	index = -1;
