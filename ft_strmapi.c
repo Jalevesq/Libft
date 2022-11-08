@@ -6,7 +6,7 @@
 /*   By: jalevesq <jalevesq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 14:05:10 by jalevesq          #+#    #+#             */
-/*   Updated: 2022/11/07 17:01:11 by jalevesq         ###   ########.fr       */
+/*   Updated: 2022/11/08 11:23:13 by jalevesq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,13 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned	int, char))
 	return (buffer);
 }
 
-char	ft_touppers(unsigned int c, char i)
-{
-	(void)c;
-	if (i >= 97 && i <= 122)
-		i -= 32;
-	return (i);
-}
+// char	ft_touppers(unsigned int c, char i)
+// {
+// 	(void)c;
+// 	if (i >= 97 && i <= 122)
+// 		i -= 32;
+// 	return (i);
+// }
 
 // #include <stdio.h>
 // int main(void)
